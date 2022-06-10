@@ -39,6 +39,8 @@ nav:
 - [CSS Gradient](https://cssgradient.io/) css 线性与径向渐变
 - [cssTriangle](http://49.234.61.19/tool/cssTriangle) css 三角形样式生成器
 
+* [css 实现各种好看的效果](https://uiverse.io/buttons) 包括按钮、卡片、loaders 等
+
 ## 抽奖组件
 
 - [lucky-canvas](https://100px.net/) 基于 JS + Canvas 实现的【大转盘 & 九宫格 & 老虎机】抽奖组件

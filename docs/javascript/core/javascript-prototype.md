@@ -97,7 +97,7 @@ console.log(Object.prototype.__proto__ === null); // true
 
 所以最终的关系图如下：
 
-![prototype](/images/js/prototype.png);
+![prototype](/docs-will/images/js/prototype.png);
 
 ## 注意点
 
