@@ -2,7 +2,7 @@
 title: 组件测试
 nav:
   path: '/components'
-  title: 练习平台
+  title: 辅助技能
   order: 3
 ---
 

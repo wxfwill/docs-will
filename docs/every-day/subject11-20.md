@@ -715,3 +715,129 @@ export default () => {
   );
 };
 ```
+
+## 18.一个字符串中出现最多的字母
+
+```tsx
+/**
+ * input: afdrfsxaaaaafvaa
+ * ouput: a
+ */
+
+import React from 'react';
+import { Button } from 'antd';
+
+export default () => {
+  const findMaxChart = (str) => {
+    if (str?.length === 1) {
+      return str;
+    }
+    let chartObj = {};
+    // debugger;
+    for (let i = 0; i < str.length; i++) {
+      if (!chartObj[str.charAt(i)]) {
+        chartObj[str.charAt(i)] = 1;
+      } else {
+        chartObj[str.charAt(i)] += 1;
+      }
+    }
+    let charStr = '',
+      chartNum = 1;
+    for (let key in chartObj) {
+      if (chartObj[key] > chartNum) {
+        charStr = key;
+        chartNum = chartObj[key];
+      }
+    }
+    return { charStr, chartNum };
+  };
+  const handleClick = () => {
+    let str = 'wecdfggggzxsssgg';
+    console.log(findMaxChart(str));
+    console.log(
+      `出现最多的字符串是：${findMaxChart(str)?.charStr}===次数为：${findMaxChart(str)?.chartNum}`,
+    );
+  };
+  return (
+    <div>
+      <Button type="primary" onClick={handleClick}>
+        字符串中出现最多的字母
+      </Button>
+    </div>
+  );
+};
+```
+
+## 19.冒泡排序
+
+```tsx
+import React from 'react';
+import { Button } from 'antd';
+
+export default () => {
+  const bubbleSort = (arr) => {
+    for (let i = 0; i < arr.length - 1; i++) {
+      for (let j = i + 1; j < arr.length; j++) {
+        if (arr[i] > arr[j]) {
+          let tem = arr[i];
+          arr[i] = arr[j];
+          arr[j] = tem;
+        }
+      }
+    }
+    return arr;
+  };
+  const bubble = () => {
+    let arr = [23, 2, 1, 10, 6, 8, 5, 6];
+    console.log('冒泡排序', bubbleSort(arr));
+  };
+  return (
+    <div>
+      <span>冒泡排序</span>
+      <Button type="primary" onClick={bubble}>
+        测试冒泡排序
+      </Button>
+    </div>
+  );
+};
+```
+
+## 20.快速排序
+
+```tsx
+import React from 'react';
+import { Button } from 'antd';
+
+export default () => {
+  const quickSort = (arr) => {
+    if (arr?.length <= 1) {
+      return arr;
+    }
+    let leftArr = [],
+      rightArr = [],
+      q = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > q) {
+        rightArr.push(arr[i]);
+      } else {
+        leftArr.push(arr[i]);
+      }
+    }
+
+    return [].concat(quickSort(leftArr), [q], quickSort(rightArr));
+  };
+  const quick = () => {
+    let arr = [23, 2, 1, 10, 6, 8, 5, 6, 5, 3];
+    console.log('快速排序', quickSort(arr));
+  };
+  return (
+    <div>
+      <span>快排</span>
+      <Button type="primary" onClick={quick}>
+        测试快速排序
+      </Button>
+    </div>
+  );
+};
+```

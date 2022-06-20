@@ -19,9 +19,9 @@ export default defineConfig({
   menus: {
     '/components': [
       {
-        title: '测试一',
+        title: 'SVG',
         children: [
-          'components/curry/index.md', // 对应的 Markdown 文件，路径是相对于 resolve.includes 目录识别的
+          'components/svg/index.md', // 对应的 Markdown 文件，路径是相对于 resolve.includes 目录识别的
         ],
       },
       {

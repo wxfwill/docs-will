@@ -39,6 +39,8 @@ nav:
 - [CSS Gradient](https://cssgradient.io/) css 线性与径向渐变
 - [cssTriangle](http://49.234.61.19/tool/cssTriangle) css 三角形样式生成器
 
+* [uiverse](https://uiverse.io/) css 实现各种炫酷的按钮、卡片、loading 等
+
 * [css 实现各种好看的效果](https://uiverse.io/buttons) 包括按钮、卡片、loaders 等
 
 ## 抽奖组件

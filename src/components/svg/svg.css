@@ -1,0 +1,23 @@
+.circle {
+  fill: red;
+  stroke: blue;
+  stroke-width: 2px;
+}
+
+.line {
+  stroke: blue;
+  stroke-width: 10px;
+}
+
+.test-flex {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding: 0 10px;
+}
+.test-flex .left {
+  margin-right: auto;
+}
+.test-flex .right {
+  margin-left: auto;
+}
